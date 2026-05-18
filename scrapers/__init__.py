@@ -1,0 +1,1 @@
+# AnimU Addon - Scrapers package

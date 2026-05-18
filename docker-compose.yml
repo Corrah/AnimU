@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  animu:
+    build:
+      context: .
+      network: host
+    container_name: animu-addon
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - HOST=0.0.0.0
+      - PORT=7002
+    volumes:
+      - ./config.json:/app/config.json
